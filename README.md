@@ -1,25 +1,34 @@
-# job-finder
-Automated job finder using n8n, LinkedIn API, Groq AI, Google Sheets and Gmail
+# 🤖 AI Job Finder Automation
 
-# AI Job Finder Automation
+> Built by **Shawn Ouko** — AI Automation Developer, Nairobi, Kenya
 
-An end-to-end automated job search system built with n8n, Groq AI, LinkedIn Jobs API, Google Sheets, and Gmail.
+An end-to-end automated job search system that runs every morning at 8am, finds the best matching jobs on LinkedIn, scores them against my CV using AI, writes tailored cover letters, and delivers everything to my Gmail inbox — completely hands-free.
 
-## What it does
-- Runs automatically every morning at 8am
-- Searches LinkedIn for AI, IT, and remote jobs matching my profile
-- Scores each job (0–100) against my CV using Groq AI (Llama 3.3-70b)
-- Logs all scored jobs to Google Sheets for tracking
-- Selects the top 5 matching jobs
-- Writes a tailored cover letter for each top job using AI
-- Sends a formatted digest email with job details and cover letters to Gmail
+---
 
-## Tech stack
-- **n8n** — workflow automation (self-hosted, free)
-- **LinkedIn Jobs API** (via RapidAPI) — job data source
-- **Groq AI / Llama 3.3-70b** — CV matching and cover letter generation
-- **Google Sheets** — job logging and history
-- **Gmail** — daily digest delivery
-- **Windows Task Scheduler** — automatic daily trigger at 7:55am
+## 🚀 What it does
 
-## Architecture
+- Runs automatically every morning at **8am EAT** via Windows Task Scheduler + n8n
+- Searches LinkedIn daily for **AI, IT, and remote jobs** (rotates 7 keyword sets + page numbers so results are always fresh)
+- Scores each job **(0–100)** against my CV profile using **Groq AI (Llama 3.3-70b)**
+- Logs **all scored jobs** to Google Sheets with title, company, location, score, reason, and URL
+- Selects the **top 5 matching jobs**
+- Writes a **tailored cover letter** for each top job using AI
+- Sends a **formatted HTML digest email** to Gmail with all 5 jobs + cover letters
+
+---
+
+## 🛠️ Tech stack
+
+| Tool | Purpose |
+|------|---------|
+| **n8n** (self-hosted) | Workflow orchestration |
+| **LinkedIn Jobs API** (RapidAPI) | Real-time job listings |
+| **Groq AI / Llama 3.3-70b** | CV matching + cover letter generation |
+| **Google Sheets** | Job logging and history |
+| **Gmail** | Daily digest delivery |
+| **Windows Task Scheduler** | Auto-start n8n at 7:55am daily |
+
+---
+
+## 🏗️ Architecture
