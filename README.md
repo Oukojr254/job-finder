@@ -86,6 +86,5 @@ Shawn Ouko — AI Automation Developer
 
  📌 Related projects
 
-- [Container Tracking & Billing Automation](link) — Google Apps Script system for logistics operations
-- [LinkedIn Job Matcher](link) — Make.com + Gemini automation for job matching
-- [Shawn Talks AI](link) — Content series educating Kenyan SMEs on AI tools
+- https://github.com/Oukojr254/AISELA-LOGISTICS-TRACKER - Container Tracking & Billing Automation — Google Apps Script system for logistics operations
+- Shawn Talks AI — Content series educating Kenyan SMEs on AI tools  http://linkedin.com/in/shawn-ouko-352ab823a/
